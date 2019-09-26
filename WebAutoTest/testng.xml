@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="kuaihecaishuiUItest">
+    <test name="smokeTeset">
+        <classes>
+            <class name="testsuite.SuiteConfig"/>
+            <class name="testsuite.SmokeTest"/>
+        </classes>
+
+    </test>
+    <listeners>
+        <listener class-name="testsuite.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
