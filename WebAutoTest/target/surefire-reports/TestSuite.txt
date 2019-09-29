@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.837 sec <<< FAILURE! - in TestSuite
-beforeClass(testsuite.SuiteConfig)  Time elapsed: 0.403 sec  <<< FAILURE!
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.94 sec <<< FAILURE! - in TestSuite
+beforeClass(testsuite.SuiteConfig)  Time elapsed: 0.452 sec  <<< FAILURE!
 java.io.FileNotFoundException: .\src\main\resources\OR.properties (系统找不到指定的路径。)
 	at testsuite.SuiteConfig.beforeClass(SuiteConfig.java:27)
 

@@ -10,7 +10,6 @@ public class DriverExcution {
     public static String code;
 
     public static void main(String[] args) throws Exception {
-
         SpringApplication.run(DriverExcution.class, args);
         customerName = "Webtest" + BaseTools.getDateChar();
         code = BaseTools.getRandomNum(18);

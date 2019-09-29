@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="kuaihecaishuiUItest" duration-ms="21" started-at="2019-09-26T15:54:14 CST" finished-at="2019-09-26T15:54:14 CST">
+  <suite name="kuaihecaishuiUItest" duration-ms="21" started-at="2019-09-29T13:41:25 CST" finished-at="2019-09-29T13:41:25 CST">
     <groups>
     </groups>
-    <test name="smokeTeset" duration-ms="21" started-at="2019-09-26T15:54:14 CST" finished-at="2019-09-26T15:54:14 CST">
+    <test name="smokeTeset" duration-ms="21" started-at="2019-09-29T13:41:25 CST" finished-at="2019-09-29T13:41:25 CST">
       <class name="testsuite.SuiteConfig">
-        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:testsuite.SuiteConfig@27c20538]" name="beforeClass" is-config="true" duration-ms="72" started-at="2019-09-26T15:54:14 CST" finished-at="2019-09-26T15:54:14 CST">
+        <test-method status="FAIL" signature="beforeClass()[pri:0, instance:testsuite.SuiteConfig@27c20538]" name="beforeClass" is-config="true" duration-ms="95" started-at="2019-09-29T13:41:25 CST" finished-at="2019-09-29T13:41:25 CST">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[.\src\main\resources\OR.properties (系统找不到指定的路径。)]]>
@@ -47,13 +47,13 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:testsuite.SuiteConfig@27c20538]" name="afterClass" is-config="true" duration-ms="-1569484454395" started-at="2019-09-26T15:54:14 CST" finished-at="1970-01-01T08:00:00 CST">
+        <test-method status="SKIP" signature="afterClass()[pri:0, instance:testsuite.SuiteConfig@27c20538]" name="afterClass" is-config="true" duration-ms="-1569735686010" started-at="2019-09-29T13:41:26 CST" finished-at="1970-01-01T08:00:00 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- testsuite.SuiteConfig -->
       <class name="testsuite.SmokeTest">
-        <test-method status="SKIP" signature="Login_001()[pri:1, instance:testsuite.SmokeTest@72d818d1]" name="Login_001" duration-ms="0" started-at="2019-09-26T15:54:14 CST" finished-at="2019-09-26T15:54:14 CST">
+        <test-method status="SKIP" signature="Login_001()[pri:1, instance:testsuite.SmokeTest@72d818d1]" name="Login_001" duration-ms="0" started-at="2019-09-29T13:41:25 CST" finished-at="2019-09-29T13:41:25 CST">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[.\src\main\resources\OR.properties (系统找不到指定的路径。)]]>

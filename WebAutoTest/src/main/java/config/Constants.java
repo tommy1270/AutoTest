@@ -3,8 +3,8 @@ package config;
 public class Constants {
     public static String Path_TestData;
     // OR(对象仓库)文件路径
-    public static final String Path_OR = ".//src/main/resources/OR.properties";
-    public static final String Path_SYS = ".//src/main/resources/system.properties";
+    public static final String Path_OR = "OR.properties";
+    public static final String Path_SYS = "system.properties";
     // dataEngine.xlsx中一些单元格的索引值
     public static final int Col_TestCaseID = 0;
     public static final int Col_TestScenarioID = 1;
