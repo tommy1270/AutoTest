@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="用户管理系统测试套件">
+    <test name="course">
+        <classes>
+            <class name="com.course.cases.LoginTest"/>
+            <class name="com.course.cases.AddUserTest"/>
+            <class name="com.course.cases.GetUserInfoTest"/>
+            <class name="com.course.cases.GetUserListTest"/>
+            <class name="com.course.cases.UpdateUserInfoTest"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>
