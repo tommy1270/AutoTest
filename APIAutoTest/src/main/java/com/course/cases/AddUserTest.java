@@ -26,6 +26,7 @@ public class AddUserTest {
 
         //发请求获取结果
         String result = getResult(addUserCase);
+        Thread.sleep(2000);
         //直接查数据库验证结果
         User user = session.selectOne("addUser",addUserCase);
         System.out.println("查询数据库结果："+user.toString());

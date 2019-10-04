@@ -26,9 +26,10 @@ public class UpdateUserInfoTest {
         System.out.println(TestConfig.updateUserInfoUrl);
         //获取接口返回信息
         int result = getResult(updateUserInfoCase);
+        Thread.sleep(2000);
         //验证
-        User user = session.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
-        System.out.println("修改后的用户信息："+user.toString());
+        User user = session.selectOne(updateUserInfoCase.getExpected(), updateUserInfoCase);
+        System.out.println("修改后的用户信息：" + user.toString());
         Assert.assertNotNull(user);
         Assert.assertNotNull(result);
 
@@ -43,9 +44,10 @@ public class UpdateUserInfoTest {
         System.out.println(TestConfig.updateUserInfoUrl);
         //获取接口返回信息
         int result = getResult(updateUserInfoCase);
+        Thread.sleep(2000);
         //验证
-        User user = session.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
-        System.out.println("修改后的用户信息："+user.toString());
+        User user = session.selectOne(updateUserInfoCase.getExpected(), updateUserInfoCase);
+        System.out.println("修改后的用户信息：" + user.toString());
         Assert.assertNotNull(user);
         Assert.assertNotNull(result);
     }
@@ -53,18 +55,19 @@ public class UpdateUserInfoTest {
     private int getResult(UpdateUserInfoCase updateUserInfoCase) throws Exception {
         HttpPost post = new HttpPost(TestConfig.updateUserInfoUrl);
         JSONObject param = new JSONObject();
-        param.put("userId",updateUserInfoCase.getUserId());
-        param.put("userName",updateUserInfoCase.getUserName());
-        param.put("sex",updateUserInfoCase.getSex());
-        param.put("age",updateUserInfoCase.getAge());
-        param.put("permission",updateUserInfoCase.getPermission());
-        param.put("isDelete",updateUserInfoCase.getIsDelete());
-        StringEntity entity = new StringEntity(param.toString(),"utf-8");
-        post.setHeader("content-type","application/json");
+        param.put("userId", updateUserInfoCase.getUserId());
+        param.put("userName", updateUserInfoCase.getUserName());
+        param.put("sex", updateUserInfoCase.getSex());
+        param.put("age", updateUserInfoCase.getAge());
+        param.put("permission", updateUserInfoCase.getPermission());
+        param.put("isDelete", updateUserInfoCase.getIsDelete());
+
+        StringEntity entity = new StringEntity(param.toString(), "utf-8");
+        post.setHeader("content-type", "application/json");
         post.setEntity(entity);
         TestConfig.defaultHttpClient.setCookieStore(TestConfig.store);
         HttpResponse response = TestConfig.defaultHttpClient.execute(post);
-        String resultStr = EntityUtils.toString(response.getEntity(),"utf-8");
+        String resultStr = EntityUtils.toString(response.getEntity(), "utf-8");
         int result = Integer.parseInt(resultStr);
         return result;
     }

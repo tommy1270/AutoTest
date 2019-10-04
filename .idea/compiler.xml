@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="APIAutoTest" />
         <module name="WebAutoTest" />
+        <module name="APIAutoTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="APIAutoTest" target="6" />
+      <module name="APIAutoTest" target="1.8" />
       <module name="WebAutoTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>

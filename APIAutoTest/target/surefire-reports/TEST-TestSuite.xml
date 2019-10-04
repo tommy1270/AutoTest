@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="7" failures="0" name="TestSuite" time="8.352" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\software\Java\jdk1.8.0_211\jre\bin"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\GitWorkspace\APIAutoTest"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="D:\GitWorkspace\APIAutoTest"/>
+    <property name="java.endorsed.dirs" value="D:\software\Java\jdk1.8.0_211\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="D:\GitWorkspace\APIAutoTest\target\surefire\surefirebooter1127177288033757293.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\software\Java\jdk1.8.0_211\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\software\IntelliJ IDEA 2019.2\jbr\\bin;D:\software\IntelliJ IDEA 2019.2\jbr\\bin\server;D:\software\IntelliJ IDEA 2019.2\jbr\\bin;D:\software\IntelliJ IDEA 2019.2\jbr\\bin\server;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;D:\software\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\maven\apache-maven-3.6.2\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;D:\software\IDEA\bin;;."/>
+    <property name="surefire.test.class.path" value="D:\GitWorkspace\APIAutoTest\target\test-classes;D:\GitWorkspace\APIAutoTest\target\classes;D:\maven\Repository\org\apache\httpcomponents\httpclient\4.1.2\httpclient-4.1.2.jar;D:\maven\Repository\org\apache\httpcomponents\httpcore\4.1.2\httpcore-4.1.2.jar;D:\maven\Repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;D:\maven\Repository\org\json\json\20180813\json-20180813.jar;D:\maven\Repository\org\mybatis\mybatis\3.4.4\mybatis-3.4.4.jar;D:\maven\Repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar;D:\maven\Repository\org\projectlombok\lombok\1.18.10\lombok-1.18.10.jar;D:\maven\Repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;D:\maven\Repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;D:\maven\Repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;D:\maven\Repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;D:\maven\Repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;D:\maven\Repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;D:\maven\Repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;D:\maven\Repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;D:\maven\Repository\com\google\guava\guava\20.0\guava-20.0.jar;D:\maven\Repository\com\aventstack\extentreports\3.0.6\extentreports-3.0.6.jar;D:\maven\Repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;D:\maven\Repository\org\testng\testng\6.11\testng-6.11.jar;D:\maven\Repository\com\beust\jcommander\1.64\jcommander-1.64.jar;D:\maven\Repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;D:\maven\Repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="D:\GitWorkspace\APIAutoTest\target\test-classes;D:\GitWorkspace\APIAutoTest\target\classes;D:\maven\Repository\org\apache\httpcomponents\httpclient\4.1.2\httpclient-4.1.2.jar;D:\maven\Repository\org\apache\httpcomponents\httpcore\4.1.2\httpcore-4.1.2.jar;D:\maven\Repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;D:\maven\Repository\org\json\json\20180813\json-20180813.jar;D:\maven\Repository\org\mybatis\mybatis\3.4.4\mybatis-3.4.4.jar;D:\maven\Repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar;D:\maven\Repository\org\projectlombok\lombok\1.18.10\lombok-1.18.10.jar;D:\maven\Repository\com\relevantcodes\extentreports\2.41.1\extentreports-2.41.1.jar;D:\maven\Repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;D:\maven\Repository\org\xerial\sqlite-jdbc\3.8.11.1\sqlite-jdbc-3.8.11.1.jar;D:\maven\Repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;D:\maven\Repository\org\mongodb\mongodb-driver\3.0.4\mongodb-driver-3.0.4.jar;D:\maven\Repository\org\mongodb\bson\3.0.4\bson-3.0.4.jar;D:\maven\Repository\org\mongodb\mongodb-driver-core\3.0.4\mongodb-driver-core-3.0.4.jar;D:\maven\Repository\com\vimalselvam\testng-extentsreport\1.3.1\testng-extentsreport-1.3.1.jar;D:\maven\Repository\com\google\guava\guava\20.0\guava-20.0.jar;D:\maven\Repository\com\aventstack\extentreports\3.0.6\extentreports-3.0.6.jar;D:\maven\Repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;D:\maven\Repository\org\testng\testng\6.11\testng-6.11.jar;D:\maven\Repository\com\beust\jcommander\1.64\jcommander-1.64.jar;D:\maven\Repository\org\yaml\snakeyaml\1.17\snakeyaml-1.17.jar;D:\maven\Repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\software\Java\jdk1.8.0_211\jre"/>
+    <property name="sun.java.command" value="D:\GitWorkspace\APIAutoTest\target\surefire\surefirebooter1127177288033757293.jar D:\GitWorkspace\APIAutoTest\target\surefire\surefire6810581324076168658tmp D:\GitWorkspace\APIAutoTest\target\surefire\surefire8143893950069251080tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="java.ext.dirs" value="D:\software\Java\jdk1.8.0_211\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\software\Java\jdk1.8.0_211\jre\lib\resources.jar;D:\software\Java\jdk1.8.0_211\jre\lib\rt.jar;D:\software\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;D:\software\Java\jdk1.8.0_211\jre\lib\jsse.jar;D:\software\Java\jdk1.8.0_211\jre\lib\jce.jar;D:\software\Java\jdk1.8.0_211\jre\lib\charsets.jar;D:\software\Java\jdk1.8.0_211\jre\lib\jfr.jar;D:\software\Java\jdk1.8.0_211\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="D:\maven\Repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.course.cases.LoginTest" name="LoginTrue" time="0.924"/>
+  <testcase classname="com.course.cases.LoginTest" name="LoginFalse" time="0.042"/>
+  <testcase classname="com.course.cases.AddUserTest" name="addUser" time="2.048"/>
+  <testcase classname="com.course.cases.GetUserInfoTest" name="getUserInfo" time="0.058"/>
+  <testcase classname="com.course.cases.GetUserListTest" name="getUserList" time="0.072"/>
+  <testcase classname="com.course.cases.UpdateUserInfoTest" name="deleteUser" time="2.049"/>
+  <testcase classname="com.course.cases.UpdateUserInfoTest" name="updateUserInfo" time="2.053"/>
+</testsuite>
