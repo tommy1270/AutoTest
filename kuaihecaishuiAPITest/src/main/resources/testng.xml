@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="kuaihecaishuiAPITest">
+    <test name="test">
+        <classes>
+            <class name="cases.LoginTest"/>
+            <class name="cases.AddDepartmentTest"/>
+<!--            <class name="com.course.cases.GetUserInfoTest"/>-->
+<!--            <class name="com.course.cases.GetUserListTest"/>-->
+<!--            <class name="com.course.cases.UpdateUserInfoTest"/>-->
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

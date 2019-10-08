@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="kuaihecaishuiAPITest" duration-ms="928" started-at="2019-10-08T08:20:27Z" finished-at="2019-10-08T08:20:28Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="AddDepartmentTest.addDeptTrue()[pri:0, instance:cases.AddDepartmentTest@34ce8af7]" name="addDeptTrue" class="cases.AddDepartmentTest"/>
+        <method signature="LoginTest.loginTrue()[pri:0, instance:cases.LoginTest@7a79be86]" name="loginTrue" class="cases.LoginTest"/>
+      </group> <!-- loginTrue -->
+    </groups>
+    <test name="test" duration-ms="928" started-at="2019-10-08T08:20:27Z" finished-at="2019-10-08T08:20:28Z">
+      <class name="cases.AddDepartmentTest">
+        <test-method status="PASS" signature="addDeptFalse()[pri:0, instance:cases.AddDepartmentTest@34ce8af7]" name="addDeptFalse" duration-ms="43" started-at="2019-10-08T16:20:28Z" description="新增部门失败用例" finished-at="2019-10-08T16:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDeptFalse -->
+        <test-method status="PASS" signature="addDeptTrue()[pri:0, instance:cases.AddDepartmentTest@34ce8af7]" name="addDeptTrue" duration-ms="60" started-at="2019-10-08T16:20:28Z" description="新增部门成功用例" finished-at="2019-10-08T16:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDeptTrue -->
+      </class> <!-- cases.AddDepartmentTest -->
+      <class name="cases.LoginTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:cases.LoginTest@7a79be86]" name="before" is-config="true" duration-ms="30" started-at="2019-10-08T16:20:27Z" description="测试准备，加载配置数据" finished-at="2019-10-08T16:20:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:cases.LoginTest@7a79be86]" name="loginFalse" duration-ms="641" started-at="2019-10-08T16:20:27Z" description="登录失败用例" finished-at="2019-10-08T16:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFalse -->
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:cases.LoginTest@7a79be86]" name="loginTrue" duration-ms="141" started-at="2019-10-08T16:20:28Z" description="登录成功用例" finished-at="2019-10-08T16:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTrue -->
+      </class> <!-- cases.LoginTest -->
+    </test> <!-- test -->
+  </suite> <!-- kuaihecaishuiAPITest -->
+</testng-results>

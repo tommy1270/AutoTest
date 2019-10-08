@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [kuaihecaishuiAPITest]">
+  <listeners>
+    <listener class-name="config.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test name="test(failed)">
+    <classes>
+      <class name="cases.AddDepartmentTest">
+        <methods>
+          <include name="addDeptFalse"/>
+        </methods>
+      </class> <!-- cases.AddDepartmentTest -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [kuaihecaishuiAPITest] -->
