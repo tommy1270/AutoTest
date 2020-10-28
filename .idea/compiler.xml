@@ -8,12 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="APIAutoTest" />
         <module name="kuaihecaishuiAPITest" />
+        <module name="testHome" />
         <module name="WebAutoTest" />
+        <module name="ServiceTestingVip1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="APIAutoTest" target="1.8" />
       <module name="kuaihecaishuiAPITest" target="1.8" />
+      <module name="ServiceTestingVip1" target="1.5" />
+      <module name="testHome" target="1.5" />
       <module name="WebAutoTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>

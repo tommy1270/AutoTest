@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APIAutoTest/APIAutoTest.iml" filepath="$PROJECT_DIR$/APIAutoTest/APIAutoTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/AutoTest.iml" filepath="$PROJECT_DIR$/.idea/AutoTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceTestingVip1/ServiceTestingVip1.iml" filepath="$PROJECT_DIR$/ServiceTestingVip1/ServiceTestingVip1.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebAutoTest/WebAutoTest.iml" filepath="$PROJECT_DIR$/WebAutoTest/WebAutoTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuaihecaishuiAPITest/kuaihecaishuiAPITest.iml" filepath="$PROJECT_DIR$/kuaihecaishuiAPITest/kuaihecaishuiAPITest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testHome/testHome.iml" filepath="$PROJECT_DIR$/testHome/testHome.iml" />
     </modules>
   </component>
 </project>

@@ -1,6 +1,17 @@
 package testsuite;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.SkipException;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 
 public class SmokeTest {
 
@@ -294,5 +305,62 @@ public class SmokeTest {
         SuiteConfig.script.execute_TestCase(Thread.currentThread().getStackTrace()[1].getMethodName());
     }*/
 
+    @Test(dataProvider = "getDataFromExcel")
+    public void test01(String username,String password){
+        System.out.println(username);
+        System.out.println(password);
+    }
 
+    @DataProvider
+    public Iterator<Object[]> getDataFromCSV(){
+        //Object[][] objects = {{"tom","123"},{"jerry","456"},{"jack","789"}};
+        String path ="./src/main/resources/data.csv";
+        System.out.println(path);
+        return readDataFromCSV(path);
+    }
+
+    @DataProvider
+    public Object[][] getDataFromExcel(){
+        //Object[][] objects = {{"tom","123"},{"jerry","456"},{"jack","789"}};
+        String path ="./src/main/resources/data.xlsx";
+        System.out.println(path);
+        return readDataFromExcel(path);
+    }
+
+    public Iterator<Object[]> readDataFromCSV(String path){
+        List<Object[]> list = new ArrayList<Object[]>();
+        try{
+            FileReader is = new FileReader(new File(path));
+            BufferedReader br = new BufferedReader(is);
+            while (br.ready()){
+                list.add(br.readLine().split(","));
+            }
+            return list.iterator();
+        }catch(Exception e){
+            throw new SkipException(e.getMessage());
+        }
+    }
+
+    public Object[][] readDataFromExcel(String path){
+        Workbook workbook;
+        try {
+            FileInputStream fileInputStream = new FileInputStream(path);
+            workbook = new XSSFWorkbook(fileInputStream);
+            Sheet sheet = workbook.getSheetAt(0);
+            int rowInExcel = sheet.getPhysicalNumberOfRows();
+            int columnInExcel = sheet.getRow(0).getPhysicalNumberOfCells();
+            String[][] obj = new String[rowInExcel-1][columnInExcel];
+            for (int row = 0; row < rowInExcel; row++) {
+                for (int col = 0; col < columnInExcel; col++) {
+                    sheet.getRow(row).getCell(col).setCellType(Cell.CELL_TYPE_STRING);
+                    obj[row-1][col] = sheet.getRow(row).getCell(col).getStringCellValue();
+                    System.out.println(obj[row-1][col]);
+                }
+            }
+            return obj;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

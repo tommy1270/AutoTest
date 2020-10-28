@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/WebAutoTest/pom.xml" />
         <option value="$PROJECT_DIR$/APIAutoTest/pom.xml" />
         <option value="$PROJECT_DIR$/kuaihecaishuiAPITest/pom.xml" />
+        <option value="$PROJECT_DIR$/testHome/pom.xml" />
+        <option value="$PROJECT_DIR$/ServiceTestingVip1/pom.xml" />
       </list>
     </option>
   </component>
