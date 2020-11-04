@@ -16,7 +16,7 @@
     <bytecodeTargetLevel>
       <module name="APIAutoTest" target="1.8" />
       <module name="kuaihecaishuiAPITest" target="1.8" />
-      <module name="ServiceTestingVip1" target="1.5" />
+      <module name="ServiceTestingVip1" target="8" />
       <module name="testHome" target="1.5" />
       <module name="WebAutoTest" target="1.8" />
     </bytecodeTargetLevel>
