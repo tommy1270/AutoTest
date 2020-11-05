@@ -1,12 +1,16 @@
 package com.tk.wework.contact;
 
+import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
+import com.tk.wework.Restful;
 import com.tk.wework.Wework;
 import com.tk.wework.WeworkConfig;
 import io.restassured.http.ContentType;
+import io.restassured.internal.path.json.mapping.JsonObjectDeserializer;
 import io.restassured.response.Response;
 
 import java.io.File;
+import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
@@ -33,6 +37,18 @@ public class Department extends Contact {
                 .post("https://qyapi.weixin.qq.com/cgi-bin/department/create")
                 .then()
                 .extract().response();
+    }
+
+    public Response create(Map<String, Object> map) {
+        reset();
+        String body = template("/data/update.json",map);
+        return requestSpecification
+                .body(body)
+                .when()
+                .post("https://qyapi.weixin.qq.com/cgi-bin/department/create")
+                .then()
+                .extract().response();
+
     }
 
     public Response update(String id, String name) {

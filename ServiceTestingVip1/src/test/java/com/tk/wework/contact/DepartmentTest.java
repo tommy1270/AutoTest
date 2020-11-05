@@ -4,6 +4,9 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -35,8 +38,14 @@ class DepartmentTest {
     }
 
     @Test
-    void createWithChinese(){
-
+    void createWithMap(){
+        Map<String,Object> map = new HashMap<>();
+        map.put("name","新增的dept");
+        map.put("name_en","hahaha");
+        map.put("parentid",2);
+        map.put("id",66);
+        department.create(map).then().body("errcode",equalTo(0));
+        department.delete("66");
     }
 
     @Test
