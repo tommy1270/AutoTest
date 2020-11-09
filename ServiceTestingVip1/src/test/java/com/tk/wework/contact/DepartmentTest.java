@@ -32,7 +32,7 @@ class DepartmentTest {
     @Test
     void create() {
         String name = "的盛世嫡妃"+random;
-        department.create(name,"4").then().body("errcode",equalTo(0));
+        department.create(name,"2").then().body("errcode",equalTo(0));
         String id = department.list("").path("department.find{it.name=='"+name+"'}.id")+"";
         department.delete(id);
         //department.create("testDept2","4").then().body("errcode",equalTo(60008));
