@@ -18,13 +18,14 @@ class DepartmentTest {
     void setUp() {
         if(department == null){
             department = new Department();
+            //department.deleteAll();
         }
     }
 
     @Test
     void list() {
         department.list("").then().body("department[0].name",equalTo("天空之城有限公司"));
-        department.list("3").then().body("department[0].name",equalTo("生产部"));
+        department.list("3").then().body("department[0].name",equalTo("生产1部"));
         department.list("2").then().body("department[0].id",equalTo(2));
     }
 
@@ -62,5 +63,10 @@ class DepartmentTest {
     void delete() {
         String id = department.create("new1Dept","3").path("id")+"";
         department.delete(id).then().body("errcode",equalTo(0));
+    }
+
+    @Test
+    void deleteAll() {
+        department.deleteAll();
     }
 }

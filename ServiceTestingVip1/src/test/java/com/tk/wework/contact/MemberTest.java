@@ -4,6 +4,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.Arrays;
@@ -35,4 +37,27 @@ class MemberTest {
         map.put("department", Arrays.asList(1, 2));
         member.create(map).then().body("errcode", equalTo(0));
     }
+
+    @Test
+    void update() {
+        Map<String,Object> map = new HashMap<String,Object>();
+
+
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/data/member.csv")
+    void create(String name,String alias) {
+        String nameNew = name + member.random;
+        String random = String.valueOf(System.currentTimeMillis()).substring(5,13);
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("userid", nameNew);
+        map.put("name", nameNew);
+        map.put("alias",alias);
+        map.put("email", random + "@qq.com");
+        map.put("mobile","186"+ random);
+        map.put("department", Arrays.asList(1, 2));
+        member.create(map).then().body("errcode", equalTo(0));
+    }
+
 }

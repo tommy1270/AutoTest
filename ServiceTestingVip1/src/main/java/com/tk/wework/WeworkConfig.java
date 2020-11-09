@@ -1,5 +1,9 @@
 package com.tk.wework;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+
 public class WeworkConfig {
     public String agentId = "1000002";
     public String secret = "U01in9axxzuuVGhwBxXuy6_MTIyBaJKZ_55_vcIYy2U";
@@ -8,14 +12,21 @@ public class WeworkConfig {
 
     private static WeworkConfig weworkConfig;
 
-    public static WeworkConfig getInstance(){
-        if (weworkConfig == null){
-            weworkConfig = new WeworkConfig();
+    public static WeworkConfig getInstance() {
+        if (weworkConfig == null) {
+            weworkConfig = load("/conf/WeworkConfig.yaml");
+            System.out.println(weworkConfig.agentId);
         }
         return weworkConfig;
     }
 
-    public static void load(String path){
-        //todo: read from json
+    public static WeworkConfig load(String path) {
+        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+        try {
+            return mapper.readValue(WeworkConfig.class.getResourceAsStream(path),WeworkConfig.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
