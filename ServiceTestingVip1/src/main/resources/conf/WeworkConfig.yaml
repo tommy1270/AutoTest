@@ -2,3 +2,9 @@ agentId: "1000002"
 secret: "U01in9axxzuuVGhwBxXuy6_MTIyBaJKZ_55_vcIYy2U"
 corpid: "ww64f10c11bcb5db89"
 contactSecret: "JkJaxqlWsEZlDp4yx793BZIjyu6TUuVtBhasPENxAog"
+current: test
+env:
+  dev:
+    "qyapi.weixin.qq.com": "qyapi.weixin.qq.com"
+  test:
+    "qyapi.weixin.qq.com": "qyapi.weixin.qq.com"
