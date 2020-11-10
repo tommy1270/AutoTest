@@ -48,8 +48,11 @@ public class Api {
     }
 
     public Response getResponseFromYaml(String path, Map<String, Object> map) {
+        //从yaml文件中获取请求参数并转换成自定义Restful对象
         Restful restful = getApiFromYaml(path);
+        //通过传入的map修改restful对象的请求参数
         restful = updateApiFromMap(restful, map);
+        //获取响应
         return getResponseFromRestful(restful);
     }
 
@@ -115,6 +118,7 @@ public class Api {
     }
 
     public Response getResponseFromRestful(Restful restful) {
+        //把restful对象中的请求参数传给requestSpecification对象，并发送请求
         RequestSpecification requestSpecification = getDefaultSpecification();
         if (restful.query != null) {
             restful.query.entrySet().forEach(entry -> {
@@ -125,7 +129,7 @@ public class Api {
             requestSpecification.body(restful.body);
         }
 
-        //todo:多环境支持
+        //多环境支持
         String[] url = updateUrl(restful.url);
 
         return requestSpecification.log().all()

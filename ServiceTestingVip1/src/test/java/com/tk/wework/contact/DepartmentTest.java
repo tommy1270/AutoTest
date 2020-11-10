@@ -7,7 +7,9 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.lessThan;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DepartmentTest {
@@ -68,5 +70,6 @@ class DepartmentTest {
     @Test
     void deleteAll() {
         department.deleteAll();
+        assertThat(1.0,lessThan(2.0));
     }
 }

@@ -12,6 +12,7 @@ public class Department extends Contact {
     public Response list(String id) {
         Map<String, Object> map = new HashMap<String, Object>();
         map.put("id", id);
+        //从yaml文件获取请求参数并请求获取响应
         return getResponseFromYaml("/api/list.yaml", map);
     }
 
